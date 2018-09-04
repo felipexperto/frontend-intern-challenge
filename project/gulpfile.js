@@ -66,8 +66,8 @@ const 	gulp = require('gulp'),
 				.pipe(jshint())
 				.pipe(jshint.reporter(jshintStylish));
 		});
-		gulp.watch('src/assets/sass/**/*.scss').on('change', function(event) {
-			gulp.src('src/assets/sass/**/*.scss')
+		gulp.watch('src/assets/scss/**/*.scss').on('change', function(event) {
+			gulp.src('src/assets/scss/**/*.scss')
 				.pipe(sass().on('error', sass.logError))
 				.pipe(csslint())
 				.pipe(csslint.formatter("compact"))

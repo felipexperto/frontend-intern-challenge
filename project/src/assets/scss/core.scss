@@ -1,0 +1,14 @@
+/**
+ * Arquivo CSS principal
+ * Contem regras referentes a elementos que serao utilizados
+ * em diversas paginas do site e devem se manter consistentes.
+ *
+ * Modelo de comentario:
+ * https://github.com/necolas/idiomatic-css
+ */
+
+@import "variables";
+@import "type";
+@import "grid";
+@import "header";
+@import "footer";

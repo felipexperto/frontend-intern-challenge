@@ -6,8 +6,78 @@
  * Modelo de comentario:
  * https://github.com/necolas/idiomatic-css
  */
-/* Grid
-   ======================================================== */
 body {
-  background-color: #333;
-  font: 100% Helvetica, sans-serif; }
+  font-family: "Roboto", "Arial", "sans-serif";
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", "Roboto", "Arial", "sans-serif";
+  font-weight: 400; }
+
+.container {
+  margin: 0 auto;
+  max-width: 100%; }
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%; } }
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px; } }
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px; } }
+
+.header {
+  background-color: #f50;
+  padding: 12px 0; }
+  .header .logo {
+    background-image: url("../img/logo/logo-chaordic.png");
+    display: block;
+    height: 25px;
+    margin: 0 auto;
+    width: 100px; }
+
+.footer {
+  padding: 20px 0; }
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .footer .col-brand a {
+    color: #aa1423;
+    display: inline-block;
+    font-size: 1.2em;
+    height: 26px;
+    text-decoration: none; }
+  .footer .social-list {
+    margin: 0;
+    padding: 0; }
+    .footer .social-list .item {
+      display: inline-block;
+      margin-right: 20px; }
+      .footer .social-list .item .link {
+        background-color: #777;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        border-radius: 10em;
+        display: inline-block;
+        height: 26px;
+        overflow: hidden;
+        text-indent: 99999px;
+        width: 26px; }
+      .footer .social-list .item .link-twitter {
+        background-image: url("../img/icon/icon-twitter.svg"); }
+      .footer .social-list .item .link-facebook {
+        background-image: url("../img/icon/icon-facebook.svg"); }

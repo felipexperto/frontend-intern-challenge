@@ -1,0 +1,30 @@
+.container {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+@media (#{$md-xs}) { 
+	.container {
+		width: 100%;
+	}
+}
+@media (#{$md-sm}) { 
+	.container {
+		width: 540px;
+	}
+}
+@media (#{$md-md}) { 
+	.container {
+		width: 720px;
+	}
+}
+@media (#{$md-lg}) { 
+	.container {
+		width: 960px;
+	}
+}
+@media (#{$md-xl}) { 
+	.container {
+		width: 1140px;
+	}
+}
