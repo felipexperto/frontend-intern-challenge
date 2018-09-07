@@ -1,0 +1,33 @@
+Vendor - files for third party code. At the top to be the most easily overridden
+
+
+Settings - preprocessors, fonts, variables (doesn’t generate any style output)
+breakpoints, animations, colors, spacers, font-size, line height, etc.
+
+Tools - mixins, functions (doesn’t generate any style output)
+positions, text-sizes, media-queries, fonts, cursors, etc.
+
+Generic - resets or normalizing files
+Normalize.css, Box-sizing, Form Input Resets, Headings Reset, etc.
+
+Elements - bare HTML elements (H1, a, p, etc… no '.classes' here )
+    site (general styles- html, body, hr, etc.)
+    links
+    lists
+    tables
+    typography
+    headings
+    images
+    forms
+    buttons
+
+Objects -  Objects, abstractions, and design patterns (e.g. .o-layout {}).
+Cosmetic-free design patters, things like the grid, lists and the flag object. Think of it like the skeleton of the layout, with no visual styling applied.
+
+Components - Majority of code goes here to style specific UI components
+
+
+Utilities/Helpers - utilities and helper classes that have the most authority (show/hide, color helpers, etc…)
+Classes that can be applied to html elements or used within tools and other modules / frameworks to help with DRY coding techniques
+Utilities help separate general global styles to increases flexibility and can be added and changed freely.
+Examples: color, font, text-size, padding, align, background, etc.

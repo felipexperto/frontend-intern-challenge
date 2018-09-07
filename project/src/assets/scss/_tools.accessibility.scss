@@ -1,0 +1,15 @@
+
+
+
+
+@mixin esconde-visivelmente() {
+	height: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 0;
+}
+
+
+
