@@ -6,9 +6,8 @@
  * Modelo de comentario:
  * https://github.com/necolas/idiomatic-css
  */
-
-@import 'variables';
-@import 'mixins';
+ 
+@import "settings.variables";
 
 .wr-top5 .titulo,
 .wr-hits .titulo {

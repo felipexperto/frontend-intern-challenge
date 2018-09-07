@@ -1,15 +1,19 @@
-$font-primary: 'Roboto', 'Arial', 'sans-serif';
-$font-secondary: 'Roboto Slab', 'Roboto', 'Arial', 'sans-serif';
+
+
 $color-primary: #aa1423; 
 $color-gray: #777; 
 $color-lightgray: #eee;
 
-$path-icon: '../img/icon';
-$path-logo: '../img/logo';
-$path-placeholder: '../img/placeholder';
+$font-primary: 'Roboto', 'Arial', 'sans-serif';
+$font-secondary: 'Roboto Slab', 'Roboto', 'Arial', 'sans-serif';
 
 $mq-xs: 'max-width: 575px';
 $mq-sm: 'min-width: 576px';
 $mq-md: 'min-width: 768px';
 $mq-lg: 'min-width: 992px';
 $mq-xl: 'min-width: 1200px';
+
+$path-icon: '../img/icon';
+$path-logo: '../img/logo';
+$path-placeholder: '../img/placeholder';
+

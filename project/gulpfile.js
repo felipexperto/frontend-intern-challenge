@@ -67,8 +67,10 @@ const 	gulp = require('gulp'),
 				.pipe(jshint.reporter(jshintStylish));
 		});
 		gulp.watch('src/assets/scss/**/*.scss').on('change', function(event) {
-			gulp.src('src/assets/scss/**/*.scss')
-				.pipe(sass().on('error', sass.logError))
+			gulp.src(['src/assets/scss/**/*.scss', '!source/assets/css/**/_*.[scss|sass'])
+				.pipe(sass({
+					includePaths: ['node_modules']
+				}).on('error', sass.logError))
 				.pipe(csslint())
 				.pipe(csslint.formatter("compact"))
 				.pipe(gulp.dest('src/assets/css'));

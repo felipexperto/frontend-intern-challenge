@@ -7,9 +7,27 @@
  * https://github.com/necolas/idiomatic-css
  */
 
-@import "variables";
-@import "mixins";
-@import "type";
-@import "grid";
-@import "header";
-@import "footer";
+@import "settings.variables";
+
+@import "tools.accessibility";
+@import "tools.animations";
+@import "tools.clearfix";
+@import "tools.css3-prefix";
+@import "tools.font-face";
+@import "tools.input-placeholder";
+
+@import "normalize-scss/sass/normalize";
+//@import 'normalize.css/normalize';
+@import "generic.box-sizing";
+
+@import "elements.typography";
+@import "elements.html";
+@import "elements.body";
+@import "elements.headings";
+@import "elements.links";
+
+@import 'bootstrap/scss/bootstrap-grid';
+
+@import "components.buttons";
+@import "components.page-header";
+@import "components.page-footer";
