@@ -1,11 +1,10 @@
-/**
- * Arquivo CSS principal
- * Contem regras referentes a elementos que serao utilizados
- * em diversas paginas do site e devem se manter consistentes.
- *
- * Modelo de comentario:
- * https://github.com/necolas/idiomatic-css
- */
+// Arquivo CSS principal
+// Contem regras referentes a elementos que serao utilizados
+// em diversas paginas do site e devem se manter consistentes.
+//
+// Modelo de comentario:
+// https://github.com/necolas/idiomatic-css
+
 
 @import "settings.variables";
 
@@ -15,10 +14,10 @@
 @import "tools.css3-prefix";
 @import "tools.font-face";
 @import "tools.input-placeholder";
+@import "tools.hover";
+@import "tools.media-query";
 
-@import "normalize-scss/sass/normalize";
-//@import 'normalize.css/normalize';
-@import "generic.box-sizing";
+@import "generic.bootstrap-reboot";
 
 @import "elements.typography";
 @import "elements.html";
@@ -26,8 +25,10 @@
 @import "elements.headings";
 @import "elements.links";
 
-@import 'bootstrap/scss/bootstrap-grid';
+@import "objects.grid";
 
-@import "components.buttons";
+@import "components.forms";
 @import "components.page-header";
 @import "components.page-footer";
+@import "components.hero-image";
+@import "components.counter-hits";

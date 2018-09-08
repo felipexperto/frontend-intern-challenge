@@ -1,0 +1,33 @@
+.hero-image {
+	background-color: $color-guide-chaordic;
+	padding: 10rem 0;
+
+	.titulo, .subtitulo, .form {
+		margin: 0 auto;
+		max-width: 100%;
+		text-align: center;
+		width: 500px;
+	}
+
+	.titulo, .subtitulo {
+		color: $color-white;
+		
+	}
+	.titulo {
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
+	.subtitulo {
+		font-family: $font-primary;
+
+		span {
+			@include mq-sm {
+				display: block;
+			}
+		}
+
+	}
+	.form {
+		margin-top: 50px;
+	}
+}

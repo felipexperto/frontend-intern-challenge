@@ -1,16 +1,45 @@
-/**
- * Arquivo CSS exclusivo da pagina index.htm
- * Contem regras que afetam somente elementos especificos
- * desta pagina. Podendo sobrepor ou nao os estilos padrao.
- *
- * Modelo de comentario:
- * https://github.com/necolas/idiomatic-css
- */
+// Arquivo CSS exclusivo da pagina index.htm
+// Contem regras que afetam somente elementos especificos
+// desta pagina. Podendo sobrepor ou nao os estilos padrao.
+//
+// Modelo de comentario:
+// https://github.com/necolas/idiomatic-css
  
 @import "settings.variables";
 
-.wr-top5 .titulo,
-.wr-hits .titulo {
-	color: $color-primary;
-	text-transform: uppercase;
+.wr-encurte {
+	background-image:url('#{$path-placeholder}/background-home.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
+.wr-top5, .wr-hits {
+	padding: 3em 0;
+	.titulo {
+		color: $color-guide-chaordic;
+		text-transform: uppercase;
+		text-align: center;	
+	}
+}
+.wr-top5 {
+	background-color: $color-white;
+}
+.wr-hits {
+	background-color: $color-guide-lightgray;
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		border-style: solid;
+		border-width: 2rem 2rem 0 2rem;
+		border-color: $color-white transparent transparent transparent;
+		height: 0;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translateX(-50%);
+		width: 0;
+	}
+}
+

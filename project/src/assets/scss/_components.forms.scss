@@ -1,0 +1,44 @@
+input[type='submit'] {
+	cursor: pointer;
+}
+
+
+.form-search {
+	padding: 0 1rem;
+
+	input[type='text'], input[type='submit'] {
+		padding-bottom:.75rem;
+		padding-top:.75rem;
+		vertical-align: bottom;
+	}
+	input[type='text'] {
+		background-color: transparent;
+		border: 0;
+		border-bottom: solid 3px $color-guide-orange;
+		color: $color-guide-orange;
+		margin-right: 2%;
+		width: 73%;
+		@include input-placeholder {
+			color: $color-guide-orange;
+		}
+		&:focus {
+			@include input-placeholder {
+				color: transparent;
+			}
+		}
+	}
+	input[type='submit'] {
+		background-color: $color-guide-orange;
+		border: 0;
+		color: $color-white;
+		font-weight: bold;
+		text-transform: uppercase;
+		width: 24%;
+		&:hover {
+			background-color: darken($color-guide-orange, 10%);
+		}
+		&:focus {
+			background-color: darken($color-guide-orange, 15%);
+		}
+	}
+}
