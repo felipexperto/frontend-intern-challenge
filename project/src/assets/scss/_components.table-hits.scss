@@ -1,0 +1,23 @@
+.table-hits {
+	max-width: 100%;
+	width: 100%;
+
+	tr {
+		border-bottom: solid 1px $color-guide-lightgray;
+	}
+	td {
+		padding: .75rem 0;
+	}
+	td:nth-child(odd) {
+
+	}
+	td:nth-child(even) {
+		text-align: right;
+	}
+	.item-url {
+		font-weight: $font-weight-bold;
+	}
+	.item-hits {
+
+	}
+}

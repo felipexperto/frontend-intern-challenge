@@ -21,8 +21,8 @@ $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: underline;
 
 
-$font-primary: 'Roboto', 'Arial', 'sans-serif';
-$font-secondary: 'Roboto Slab', 'Roboto', 'Arial', 'sans-serif';
+$font-primary: 'roboto', 'Arial', 'sans-serif';
+$font-secondary: 'roboto slab', 'roboto', 'Arial', 'sans-serif';
 $font-family-base: $font-primary;
 
 $font-weight-light:  300;
@@ -55,7 +55,8 @@ $mq-lg: '(min-width: 992px)';
 $mq-xl: '(min-width: 1200px)';
 $mq-print: 'print';
 
-$path-icon: '../img/icon';
-$path-logo: '../img/logo';
-$path-placeholder: '../img/placeholder';
+$path-icon: '../img/icon/';
+$path-logo: '../img/logo/';
+$path-placeholder: '../img/placeholder/';
+$path-font: '../fonts/';
 

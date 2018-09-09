@@ -19,16 +19,18 @@
 
 @import "generic.bootstrap-reboot";
 
-@import "elements.typography";
-@import "elements.html";
+@import "elements.animations";
 @import "elements.body";
 @import "elements.headings";
+@import "elements.html";
 @import "elements.links";
+@import "elements.typography";
 
 @import "objects.grid";
 
-@import "components.forms";
-@import "components.page-header";
-@import "components.page-footer";
-@import "components.hero-image";
 @import "components.counter-hits";
+@import "components.forms";
+@import "components.hero-image";
+@import "components.page-footer";
+@import "components.page-header";
+@import "components.table-hits";

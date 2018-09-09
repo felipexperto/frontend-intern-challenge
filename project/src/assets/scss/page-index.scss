@@ -8,7 +8,7 @@
 @import "settings.variables";
 
 .wr-encurte {
-	background-image:url('#{$path-placeholder}/background-home.jpg');
+	background-image:url('#{$path-placeholder}background-home.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -24,6 +24,13 @@
 }
 .wr-top5 {
 	background-color: $color-white;
+
+	.table-top5 {
+		margin: 0 auto;
+		max-width: 100%;
+		padding: 0 1rem;
+		width:450px;
+	}
 }
 .wr-hits {
 	background-color: $color-guide-lightgray;

@@ -1,14 +1,17 @@
-input[type='submit'] {
+input[type='submit'], a {
 	cursor: pointer;
+	span {
+		@include esconde-visualmente();
+	}
 }
 
 
-.form-search {
+.form-encurte {
 	padding: 0 1rem;
 
-	input[type='text'], input[type='submit'] {
-		padding-bottom:.75rem;
-		padding-top:.75rem;
+	input, a, a:before {
+		display: inline-block;
+		padding:.75rem;
 		vertical-align: bottom;
 	}
 	input[type='text'] {
@@ -27,18 +30,57 @@ input[type='submit'] {
 			}
 		}
 	}
-	input[type='submit'] {
+	a {
 		background-color: $color-guide-orange;
 		border: 0;
 		color: $color-white;
 		font-weight: bold;
 		text-transform: uppercase;
+		transition-delay: 0;
+		transition-duration: 1s;
+		transition-property: all;
+		transition-timing-function: ease-in;
 		width: 24%;
+		&:focus {
+			background-color: $color-guide-orange;
+		}
 		&:hover {
 			background-color: darken($color-guide-orange, 10%);
 		}
-		&:focus {
-			background-color: darken($color-guide-orange, 15%);
+		&.is-copiar {
+			color: transparent;
+			position: relative;
+			&:before {
+				@include animation (0, 2s, forwards, 1, fadetext);
+				bottom: 0;
+				color: $color-white;
+				content: "Copiar";
+				display: block;
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
 		}
 	}
+	.form-group {
+		position: relative;
+	}
+	.alert {
+	    margin-top: 10px;
+	    position: absolute;
+	    transform: scaleY(0);
+	    @include transform-origin(top);
+	    width: 100%;
+	    &.is-active {
+	    	@include animation (.25s, 1s, forwards, 1, slidedown);
+	    }	
+	    span {
+			background-color: $color-white;
+		    border-radius: 2px;
+	    	display: block;
+	    	padding: 1rem .5rem;
+	    }
+	}
+
 }

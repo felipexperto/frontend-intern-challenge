@@ -13,6 +13,11 @@
 
 .wr-top5 {
   background-color: #fff; }
+  .wr-top5 .table-top5 {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 1rem;
+    width: 450px; }
 
 .wr-hits {
   background-color: #eee;

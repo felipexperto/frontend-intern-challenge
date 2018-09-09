@@ -1,4 +1,4 @@
-@include font-face('roboto', 'roboto-regular-webfont', $weight: 'normal', $style: normal);
-@include font-face('roboto', 'roboto-bold-webfont', $weight: 'bold', $style: normal);
-@include font-face('roboto slab', 'robotoslab-regular-webfont', $weight: 'normal', $style: normal);
-@include font-face('roboto slab', 'robotoslab-bold-webfont', $weight: 'bold', $style: normal);
+@include font-face('roboto', 'roboto-regular-webfont', $weight: $font-weight-normal, $style: normal);
+@include font-face('roboto', 'roboto-bold-webfont', $weight: $font-weight-bold, $style: normal);
+@include font-face('roboto slab', 'robotoslab-regular-webfont', $weight: $font-weight-normal, $style: normal);
+@include font-face('roboto slab', 'robotoslab-bold-webfont', $weight: $font-weight-bold, $style: normal);

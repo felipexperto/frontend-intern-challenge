@@ -1,8 +1,4 @@
-
-
-
-
-@mixin esconde-visivelmente() {
+@mixin esconde-visualmente() {
 	height: 0;
 	left: 0;
 	overflow: hidden;
@@ -10,6 +6,3 @@
 	top: 0;
 	width: 0;
 }
-
-
-
