@@ -6,31 +6,31 @@
 // https://github.com/necolas/idiomatic-css
 
 
-@import "settings.variables";
+@import "settings/variables";
 
-@import "tools.accessibility";
-@import "tools.animations";
-@import "tools.clearfix";
-@import "tools.css3-prefix";
-@import "tools.font-face";
-@import "tools.input-placeholder";
-@import "tools.hover";
-@import "tools.media-query";
+@import "tools/accessibility";
+@import "tools/animations";
+@import "tools/clearfix";
+@import "tools/css3-prefix";
+@import "tools/font-face";
+@import "tools/input-placeholder";
+@import "tools/hover";
+@import "tools/media-query";
 
-@import "generic.bootstrap-reboot";
+@import "generic/bootstrap-reboot";
 
-@import "elements.animations";
-@import "elements.body";
-@import "elements.headings";
-@import "elements.html";
-@import "elements.links";
-@import "elements.typography";
+@import "elements/animations";
+@import "elements/body";
+@import "elements/headings";
+@import "elements/html";
+@import "elements/links";
+@import "elements/typography";
 
-@import "objects.grid";
+@import "objects/grid";
 
-@import "components.counter-hits";
-@import "components.forms";
-@import "components.hero-image";
-@import "components.page-footer";
-@import "components.page-header";
-@import "components.table-hits";
+@import "components/counter-hits";
+@import "components/forms";
+@import "components/hero-image";
+@import "components/page-footer";
+@import "components/page-header";
+@import "components/table-hits";
