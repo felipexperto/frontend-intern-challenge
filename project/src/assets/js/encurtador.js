@@ -89,6 +89,12 @@ function getUrlEncurtada(_self) {
 
 document.addEventListener("DOMContentLoaded", function() {
 
+	var bD = browserDetect(),
+		isMobile = bD.mobile,
+		inputEncurtar = document.getElementById('input-encurtar');
+
+	if (isMobile === false) inputEncurtar.focus();
+
 	var btnEncurtar = document.getElementById('btn-encurtar');
 	btnEncurtar.addEventListener("click", function(e) {
 		e.preventDefault();

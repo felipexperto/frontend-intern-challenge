@@ -62,11 +62,11 @@ function createTableUrl() {
 					if (a.hits > b.hits)
 						return -1;
 					return 0;
-				})
-
-				response.data.forEach(function(item) {
-					_self.appendRow(tabela, item);
 				});
+
+				for(i = 0; i < 5; i++) {
+					_self.appendRow(tabela, response.data[i]);
+				}
 			})
 			.catch(function (error) {
 				// erro
