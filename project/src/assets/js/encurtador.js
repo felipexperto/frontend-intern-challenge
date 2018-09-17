@@ -11,10 +11,16 @@ function validarUrl(valor) {
 function avisoMensagem(elId, texto, args) {
 	var span = document.createElement('span');
 	span.innerHTML = texto;
-	elId.appendChild(span);
+	elId.innerHTML = span.outerHTML;
 
-	if (args.status == 'success') elId.classList.add('alert-success');
-	if (args.status == 'error') elId.classList.add('alert-error');
+	if (args.status == 'success') {
+		elId.classList.remove('alert-error');
+		elId.classList.add('alert-success');
+	}
+	if (args.status == 'error') {
+		elId.classList.remove('alert-success');
+		elId.classList.add('alert-error');
+	}
 	
 	elId.classList.add('is-active');
 }
