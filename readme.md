@@ -1,5 +1,50 @@
 # Desafio estagiário: HTML/CSS/JS
 
+### @felipexperto:
+
+> Primeiramente, créditos a quem merece: Encontrei este desafio na lista [Frontend Challenges](https://github.com/LFeh/frontend-challenges) de [Felipe Fialho](https://github.com/LFeh). Acesse lá que tem muito conteúdo interessante e siga-o no [Twitter](https://twitter.com/lfeh).
+
+&nbsp;
+
+**A construção desta Landing Page permite que você explore diversas tecnologias durante sua criação, podendo optar por diversos caminhos:**
+
+- Javascript Vanilla vs jQuery;
+- ES5 vs ES6;
+- Fetch vs Libraries (ex: [Axios](https://github.com/axios/axios));
+- Flexbox vs Grid vs Bootstrap;
+- CSS Animation vs [jQuery Effects](https://api.jquery.com/category/effects/) vs [Animate.css](https://daneden.github.io/animate.css/);
+- Fontes via CDN vs Embed padrão;
+- Ícones em png vs svg;
+
+&nbsp;
+
+**Como decidi abordar o projeto:**
+
+- Seguir *todas* as regras em *Layout*, *Dicas* e *Diferenciais*;
+- Compatibilidade com IE 11, Edge, Chrome e Firefox;
+- Mínimo de requests possível;
+- Sem requests de CDNs;
+- Mínimo de dependências em produção possível (frameworks, libraries, plugins, etc);
+- Javascript Vanilla ES5 + Flexbox + CSS Animation + Fontes via CDN + SVG;
+
+&nbsp;
+
+**Sobre os arquivos e execução:**
+
+- O projeto está na pasta `project` - intuitivo hein?! 
+- Após um `npm install` você pode subir um server com browserify utilizando o comando `npm run gulp server`;
+- Ou buildar o projeto com o comando `npm run gulp`;
+   - As duas instruções acima também podem ser encontradas dentro do arquivo gulpfile.js
+
+
+
+
+
+
+---
+
+## Enunciado padrão:
+
 > **ATENÇÃO:** Antes de começar, se [cadastre na vaga](https://linxneemuchaordic.recruiterbox.com/) via Recruiterbox **=]**
 
 O desafio proposto consiste numa **landing page** simulando um encurtador de links, onde testará as habilidades e qualidade de código de um desenvolvedor front-end ao transformar um layout em um protótipo funcional. 
