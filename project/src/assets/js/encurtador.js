@@ -60,23 +60,42 @@ function copiarUrlEncurtada(input) {
 	}
 }
 
+function alertResetView(alert, btn, input) {
+	var el = alert.querySelector('a');
+	el.addEventListener('click', function() {
+		alert.classList.remove('is-active');
+		alert.children[0].remove();
+		input.value = '';
+		input.focus();
+		btn.classList.remove('is-copiar');
+	});
+}
+		
 function getUrlEncurtada(_self) {
 
-	var inputEncurtar = document.getElementById('input-encurtar'),
-		valorEncurtar = inputEncurtar.value,
-		alertEncurtar = document.getElementById('alert-encurtar');
+	var alertEncurtar = document.getElementById('alert-encurtar'),
+		btnEncurtar   = document.getElementById('btn-encurtar'),
+		inputEncurtar = document.getElementById('input-encurtar'),
+		valorEncurtar = inputEncurtar.value;
+		
 
+	// condicao == true, quer dizer que a tarefa
+	// a ser executada eh COPIAR o link encurtado
 	if(_self.classList.contains('is-copiar')) {
 		copiarUrlEncurtada(inputEncurtar);
-		avisoMensagem(alertEncurtar, 'Link copiado com sucesso', { status: 'success' });
+		avisoMensagem(alertEncurtar, 'Link copiado com sucesso. <a href="#" id="btn-encurtarnovamente">Encurtar outro link</a>.', { status: 'success' });
+		alertResetView(alertEncurtar, btnEncurtar, inputEncurtar);
 		return;
 	}
 
+	// condicao == false, quer dizer que a tarefa
+	// a ser executada eh GERAR o link encurtado
 	if(!_self.classList.contains('is-copiar')) {
 
 		// valida url a ser encurtada
 		if(validarUrl(valorEncurtar) === false) {
-			avisoMensagem(alertEncurtar, 'url invalida', { status: 'error' });
+			avisoMensagem(alertEncurtar, 'Url inválida. <a href="#" id="btn-encurtarnovamente">Tentar novamente</a>.', { status: 'error' });
+			alertResetView(alertEncurtar, btnEncurtar, inputEncurtar);
 			return;
 		}
 
@@ -86,12 +105,12 @@ function getUrlEncurtada(_self) {
 
 		// atualizacao da view
 		inputEncurtar.value = urlEncurtado;
+		inputEncurtar.classList.add('fadetext');
+		alertEncurtar.classList.remove('is-active');
 		_self.classList.add('is-copiar');
 	}
 
 }
-
-
 
 document.addEventListener("DOMContentLoaded", function() {
 

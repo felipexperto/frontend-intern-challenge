@@ -260,6 +260,26 @@ template {
 [hidden] {
   display: none !important; }
 
+.alert.alert-success span {
+  background-color: #28a745;
+  border: solid 1px rgba(255, 255, 255, 0.25);
+  color: #fff; }
+
+.alert.alert-success a {
+  color: #fff; }
+  .alert.alert-success a:focus, .alert.alert-success a:hover, .alert.alert-success a:active {
+    color: #fff; }
+
+.alert.alert-error span {
+  background-color: #ffc107;
+  border: solid 1px rgba(255, 255, 255, 0.25);
+  color: #343a40; }
+
+.alert.alert-error a {
+  color: #343a40; }
+  .alert.alert-error a:focus, .alert.alert-error a:hover, .alert.alert-error a:active {
+    color: #343a40; }
+
 @-webkit-keyframes fadetext {
   0% {
     opacity: 0; }
@@ -415,17 +435,21 @@ input[type='submit'], a {
 
 .form-encurte {
   padding: 0 1rem; }
-  .form-encurte input, .form-encurte a, .form-encurte a:before {
+  .form-encurte .span-encurtar {
+    border-bottom: solid 3px #ff6e14;
+    display: inline-block;
+    margin-right: 2%;
+    position: relative;
+    width: 73%; }
+  .form-encurte input, .form-encurte #btn-encurtar, .form-encurte #btn-encurtar:before {
     display: inline-block;
     padding: .75rem;
     vertical-align: bottom; }
   .form-encurte input[type='text'] {
     background-color: transparent;
     border: 0;
-    border-bottom: solid 3px #ff6e14;
     color: #ff6e14;
-    margin-right: 2%;
-    width: 73%; }
+    width: 100%; }
     .form-encurte input[type='text'].placeholder {
       color: #ff6e14; }
     .form-encurte input[type='text']:-moz-placeholder {
@@ -436,6 +460,28 @@ input[type='submit'], a {
       color: #ff6e14; }
     .form-encurte input[type='text']::-webkit-input-placeholder {
       color: #ff6e14; }
+    .form-encurte input[type='text'].fadetext {
+      opacity: 0;
+      -webkit-animation-delay: 0;
+      -webkit-animation-duration: 0.75s;
+      -webkit-animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      -webkit-animation-name: fadetext;
+      -moz-animation-delay: 0;
+      -moz-animation-duration: 0.75s;
+      -moz-animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      -moz-animation-name: fadetext;
+      -o-animation-delay: 0;
+      -o-animation-duration: 0.75s;
+      -o-animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      -o-animation-name: fadetext;
+      animation-delay: 0;
+      animation-duration: 0.75s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      animation-name: fadetext; }
     .form-encurte input[type='text']:focus.placeholder {
       color: transparent; }
     .form-encurte input[type='text']:focus:-moz-placeholder {
@@ -446,7 +492,7 @@ input[type='submit'], a {
       color: transparent; }
     .form-encurte input[type='text']:focus::-webkit-input-placeholder {
       color: transparent; }
-  .form-encurte a {
+  .form-encurte #btn-encurtar {
     background-color: #ff6e14;
     border: 0;
     color: #fff;
@@ -457,31 +503,31 @@ input[type='submit'], a {
     transition-property: all;
     transition-timing-function: ease-in;
     width: 24%; }
-    .form-encurte a:focus {
+    .form-encurte #btn-encurtar:focus {
       background-color: #ff6e14; }
-    .form-encurte a:hover {
+    .form-encurte #btn-encurtar:hover {
       background-color: #e05600; }
-    .form-encurte a.is-copiar {
+    .form-encurte #btn-encurtar.is-copiar {
       color: transparent;
       position: relative; }
-      .form-encurte a.is-copiar:before {
+      .form-encurte #btn-encurtar.is-copiar:before {
         -webkit-animation-delay: 0;
-        -webkit-animation-duration: 2s;
+        -webkit-animation-duration: 0.75s;
         -webkit-animation-fill-mode: forwards;
         animation-iteration-count: 1;
         -webkit-animation-name: fadetext;
         -moz-animation-delay: 0;
-        -moz-animation-duration: 2s;
+        -moz-animation-duration: 0.75s;
         -moz-animation-fill-mode: forwards;
         animation-iteration-count: 1;
         -moz-animation-name: fadetext;
         -o-animation-delay: 0;
-        -o-animation-duration: 2s;
+        -o-animation-duration: 0.75s;
         -o-animation-fill-mode: forwards;
         animation-iteration-count: 1;
         -o-animation-name: fadetext;
         animation-delay: 0;
-        animation-duration: 2s;
+        animation-duration: 0.75s;
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
         animation-name: fadetext;
@@ -527,10 +573,12 @@ input[type='submit'], a {
       animation-iteration-count: 1;
       animation-name: slidedown; }
     .form-encurte .alert span {
-      background-color: #fff;
       border-radius: 2px;
       display: block;
       padding: 1rem .5rem; }
+      .form-encurte .alert span a {
+        font-weight: 700;
+        text-decoration: underline; }
 
 .hero-image {
   background-color: #aa1423;

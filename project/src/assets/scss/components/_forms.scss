@@ -9,7 +9,14 @@ input[type='submit'], a {
 .form-encurte {
 	padding: 0 1rem;
 
-	input, a, a:before {
+	.span-encurtar {
+		border-bottom: solid 3px $color-guide-orange;
+		display: inline-block;
+		margin-right: 2%;
+		position: relative;
+		width: 73%;
+	}
+	input, #btn-encurtar, #btn-encurtar:before {
 		display: inline-block;
 		padding:.75rem;
 		vertical-align: bottom;
@@ -17,12 +24,14 @@ input[type='submit'], a {
 	input[type='text'] {
 		background-color: transparent;
 		border: 0;
-		border-bottom: solid 3px $color-guide-orange;
 		color: $color-guide-orange;
-		margin-right: 2%;
-		width: 73%;
+		width: 100%;
 		@include input-placeholder {
 			color: $color-guide-orange;
+		}
+		&.fadetext {
+			opacity: 0;
+			@include animation (0, .75s, forwards, 1, fadetext);
 		}
 		&:focus {
 			@include input-placeholder {
@@ -30,7 +39,7 @@ input[type='submit'], a {
 			}
 		}
 	}
-	a {
+	#btn-encurtar {
 		background-color: $color-guide-orange;
 		border: 0;
 		color: $color-white;
@@ -51,7 +60,7 @@ input[type='submit'], a {
 			color: transparent;
 			position: relative;
 			&:before {
-				@include animation (0, 2s, forwards, 1, fadetext);
+				@include animation (0, .75s, forwards, 1, fadetext);
 				bottom: 0;
 				color: $color-white;
 				content: "Copiar";
@@ -76,10 +85,13 @@ input[type='submit'], a {
 	    	@include animation (.25s, 1s, forwards, 1, slidedown);
 	    }	
 	    span {
-			background-color: $color-white;
 		    border-radius: 2px;
 	    	display: block;
 	    	padding: 1rem .5rem;
+	    	a {
+				font-weight: 700;
+				text-decoration: underline;
+	    	}
 	    }
 	}
 
