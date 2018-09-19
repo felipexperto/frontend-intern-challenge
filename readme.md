@@ -25,7 +25,7 @@
 - Mínimo de requests possível;
 - Sem requests de CDNs;
 - Mínimo de dependências em produção possível (frameworks, libraries, plugins, etc);
-- Javascript Vanilla ES5 + Flexbox + CSS Animation + Fontes via CDN + SVG;
+- Javascript Vanilla ES5 + Flexbox + CSS Animation + Fontes embed padrão + SVG;
 
 &nbsp;
 
@@ -36,12 +36,11 @@
 - Ou buildar o projeto com o comando `npm run gulp`;
    - As duas instruções acima também podem ser encontradas dentro do arquivo gulpfile.js
 
-
-
-
-
+&nbsp;
 
 ---
+
+&nbsp;
 
 ## Enunciado padrão:
 
