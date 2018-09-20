@@ -1,13 +1,17 @@
-function createTableUrl() {
+class createTableUrl {
 
-	var _self = this;
+	constructor() {
+		
+	}
 
-	_self.setup = function(appendId, args) {
-		_self.createTable(appendId, args);
-		_self.fillTable(args);
+	
+
+	setup(appendId, args) {
+		this.createTable(appendId, args);
+		this.fillTable(args);
 	};
 
-	_self.createTable = function(appendId, args) {
+	createTable(appendId, args) {
 
 		var wrTabela = document.getElementById(appendId),
 			tabela = document.createElement('table');
@@ -30,29 +34,31 @@ function createTableUrl() {
 		wrTabela.appendChild(tabela);
 	};
 
-	_self.createRow = function(item) {
-		return ''+
-			'<tr>'+
-				'<td>'+
-					'<a class="item-url" href="'+ item.shortUrl +'" title="'+ item.url +'" target="_blank">'+ item.shortUrl +'</a>'+
-				'</td>'+
-			  	'<td>'+ 
-			  		'<span class="item-hits">'+ Number(item.hits).toLocaleString('pt') +'</span>'+
-			  	'</td>'+
-			'</tr>';
+	createRow(item) {
+		return `
+			<tr>
+				<td>
+					<a class="item-url" href=" ${item.shortUrl} " title=" ${item.url} " target="_blank"> ${item.shortUrl} </a>
+				</td>
+			  	<td>
+			  		<span class="item-hits"> ${Number(item.hits).toLocaleString('pt')} </span>
+			  	</td>
+			</tr>`;
 	};
 
-	_self.appendRow = function(tabela, item) {
+	appendRow (tabela, item) {
 		var tr = document.createElement('tr'),
-			trInnerHTML = _self.createRow(item);
+			trInnerHTML = this.createRow(item);
 
 		tr.innerHTML = trInnerHTML;
 		tabela.appendChild(tr);
 	};
 
-	_self.fillTable = function(args) {
+	fillTable(args) {
+
 		axios.get('./assets/json/urls.json')
-			.then(function (response) {
+		//.then((response) => {
+			.then((response) => {
 				// sucesso
 				var tabela = document.getElementById(args.tableId);
 
@@ -64,8 +70,8 @@ function createTableUrl() {
 					return 0;
 				});
 
-				for(i = 0; i < 5; i++) {
-					_self.appendRow(tabela, response.data[i]);
+				for(let i = 0; i < 5; i++) {
+					this.appendRow(tabela, response.data[i]);
 				}
 			})
 			.catch(function (error) {
@@ -80,6 +86,7 @@ function createTableUrl() {
 
 document.addEventListener("DOMContentLoaded", function() {
 	var c = new createTableUrl();
+
 	c.setup('top5', {
 		 tableId : 'top5-tabela',
 		 tableClass : ['table-responsive', 'table-hits']
