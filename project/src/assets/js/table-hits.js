@@ -1,11 +1,5 @@
 class createTableUrl {
 
-	constructor() {
-		
-	}
-
-	
-
 	setup(appendId, args) {
 		this.createTable(appendId, args);
 		this.fillTable(args);
@@ -57,9 +51,7 @@ class createTableUrl {
 	fillTable(args) {
 
 		axios.get('./assets/json/urls.json')
-		//.then((response) => {
 			.then((response) => {
-				// sucesso
 				var tabela = document.getElementById(args.tableId);
 
 				response.data.sort(function(a, b) {
@@ -75,7 +67,6 @@ class createTableUrl {
 				}
 			})
 			.catch(function (error) {
-				// erro
 				console.log(error);
 			})
 			.then(function () {
