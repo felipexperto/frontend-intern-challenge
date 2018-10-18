@@ -1,0 +1,9 @@
+a {
+	color: $color-guide-chaordic;
+	text-decoration: none;
+
+	&:hover, &:focus, &:active {
+		text-decoration: none;
+	}
+
+}

@@ -1,0 +1,49 @@
+.footer {
+	padding: 20px 0;
+	
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.col-brand {
+
+		a {
+			display: inline-block;
+			font-size: 1.2em;
+			height: 26px;
+		}
+	}
+
+	.social-list {
+		margin: 0;
+		padding: 0;
+
+		.item {
+			display: inline-block;
+			margin-right: 20px;
+
+			.link {
+				background-color: $color-gray-800;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 60%;
+				border-radius: 10em;
+				display: inline-block;
+				height: 26px;
+				overflow: hidden;
+				text-indent: 99999px;
+				width: 26px;
+			}
+			.link-twitter {
+				background-image: url('#{$path-icon}icon-twitter.svg');
+			}
+			.link-facebook {
+				background-image: url('#{$path-icon}icon-facebook.svg');
+			}
+
+		}
+	}
+
+}

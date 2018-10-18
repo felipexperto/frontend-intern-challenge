@@ -1,0 +1,29 @@
+.container {
+	margin: 0 auto;
+	max-width: 100%;
+}
+@include mq-xs { 
+	.container {
+		width: 100%;
+	}
+}
+@include mq-sm { 
+	.container {
+		width: 540px;
+	}
+}
+@include mq-md { 
+	.container {
+		width: 720px;
+	}
+} 
+@include mq-lg { 
+	.container {
+		width: 960px;
+	}
+}
+@include mq-xl { 
+	.container {
+		width: 1140px;
+	}
+}

@@ -1,0 +1,35 @@
+@mixin mq-xs {
+  @media #{$mq-xs} {
+    @content;
+  }
+}
+
+@mixin mq-sm {
+  @media #{$mq-sm} {
+    @content;
+  }
+}
+
+@mixin mq-md {
+  @media #{$mq-md} {
+    @content;
+  }
+}
+
+@mixin mq-lg {
+  @media #{$mq-lg} {
+    @content;
+  }
+}
+
+@mixin mq-xl {
+  @media #{$mq-xl} {
+    @content;
+  }
+}
+
+@mixin print {
+  @media #{$mq-print} {
+    @content;
+  }
+}

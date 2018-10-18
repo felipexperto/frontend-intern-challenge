@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="./assets/img/favicon.png">
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/core.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/page-index.css">
+
+	<title>Chaordic - Encurte seus links</title>
+
+</head> 
+<body class="page-index">
+	<div class="page-container">
+		<header class="header">
+			<div class="container">
+				<a class="logo" href="#" title="Chaordic - Encurte seus links"></a>
+			</div>
+		</header>
+		<main class="main-container">
+			<section class="wr-encurte hero-image">
+				<div class="container">
+					<h1 class="titulo">Encurte seus links.</h1>
+					<h4 class="subtitulo">
+					<span>Links são longos. Encurte os links que você deseja compartilhar,</span><span> e acompanhe enquanto viajam através da internet.</span>
+					</h4>
+					<form class="form form-encurte" action="" class="">
+						<div class="form-group">
+							<span class="span-encurtar">
+								<input  type="text"
+										id="input-encurtar"
+										placeholder="Cole o seu link aqui">
+							</span>
+							<a  href="#" 
+								id="btn-encurtar" 
+								title="Encurtar link">Encurtar <span>link</span></a>
+							<div id="alert-encurtar" class="alert"></div>
+						</div>
+					</form>
+				</div>			
+			</section>
+			<section class="wr-top5">
+				<div class="container">
+					<h2 class="titulo">Top 5</h2>
+					<div class="table-top5" id="top5"></div>
+				</div>
+			</section>
+			<section class="wr-hits">
+				<div class="container">
+					<h2 class="titulo">Hits</h2>
+					<div class="counter-hits" id="contador">
+						<div>
+							<span class="number">35.713.571</span>
+						</div>
+						<div>
+							<span class="label">Cliques em links</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="col-brand">
+					<a href="#">chr.dc</a>
+				</div>
+				<div class="col-social">
+					<ul class="social-list" role="menu">
+						<li class="item" role="menuitem">
+							<a href="#" class="link link-twitter" title="Twitter">Twitter</a>
+						</li>
+						<li class="item" role="menuitem">
+							<a href="#" class="link link-facebook" title="Facebook">Facebook</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+
+	<script type="text/javascript" src="./assets/js/es6-promise.auto.min.js"></script>
+	<script type="text/javascript" src="./assets/js/axios.min.js"></script>
+	<script type="text/javascript" src="./assets/js/browser-detect.umd.js"></script>
+	<!-- build:core assets/js/page-index.min.js -->
+	<script type="text/javascript" src="./assets/js/table-hits.js"></script>
+	<script type="text/javascript" src="./assets/js/encurtador.js"></script>
+	<!-- endbuild -->
+
+</body>
+</html>

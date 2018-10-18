@@ -1,0 +1,62 @@
+$color-white:    #fff;
+$color-gray-100: #f8f9fa;
+$color-gray-200: #e9ecef;
+$color-gray-300: #dee2e6;
+$color-gray-400: #ced4da;
+$color-gray-500: #adb5bd;
+$color-gray-600: #6c757d;
+$color-gray-700: #495057;
+$color-gray-800: #343a40;
+$color-gray-900: #212529;
+$color-black:    #000;
+
+$color-guide-chaordic: #aa1423; 
+$color-guide-gray: #777;
+$color-guide-lightgray: #eee;
+$color-guide-orange: #ff6e14;
+
+$link-color: $color-guide-chaordic;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+
+$font-primary: 'roboto', 'Arial', 'sans-serif';
+$font-secondary: 'roboto slab', 'roboto', 'Arial', 'sans-serif';
+$font-family-base: $font-primary;
+
+$font-weight-light:  300;
+$font-weight-normal: 400;
+$font-weight-bold:   700;
+
+$font-size-base: 1rem;
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+
+$text-muted: $color-gray-600;
+
+$spacer: 1rem;
+
+$headings-margin-bottom: ($spacer / 2);
+
+$paragraph-margin-bottom: 1rem;
+
+$dt-font-weight: $font-weight-bold;
+
+$table-cell-padding: .75rem;
+
+$body-bg: $color-white;
+$body-color: $color-black;
+
+$mq-xs: '(max-width: 575px)';
+$mq-sm: '(min-width: 576px)';
+$mq-md: '(min-width: 768px)';
+$mq-lg: '(min-width: 992px)';
+$mq-xl: '(min-width: 1200px)';
+$mq-print: 'print';
+
+$path-icon: '../img/icon/';
+$path-logo: '../img/logo/';
+$path-placeholder: '../img/placeholder/';
+$path-font: '../fonts/';
+

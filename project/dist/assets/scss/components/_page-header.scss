@@ -1,0 +1,12 @@
+.header {
+	padding: 12px 0;
+
+	.logo {
+		background-image: url('#{$path-logo}logo-chaordic.png');
+		display: block;
+		height: 25px;
+		margin: 0 auto;
+		width: 100px;
+	}
+
+}
